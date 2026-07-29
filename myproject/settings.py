@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-2bxg3#x5j6jxx7@*(6jkls)9yy%h_5kumj-)ae!(u*(y_zs@l0
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "django-rest-api-steel.vercel.app",
+    "django-rest-api-xdda.vercel.app",
     ".vercel.app",
     "localhost",
     "127.0.0.1",
@@ -79,12 +79,14 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+import os
 import dj_database_url
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default='sqlite:///db.sqlite3',
-        conn_max_age=600
+    "default": dj_database_url.config(
+        default=os.path.join(BASE_DIR, "db.sqlite3"),
+        conn_max_age=600,
+        ssl_require=False,
     )
 }
 
