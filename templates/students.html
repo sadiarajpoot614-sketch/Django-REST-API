@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Dashboard</title>
+
+<style>
+body{
+    font-family:Arial;
+    background:#f2f2f2;
+    padding:40px;
+}
+
+.container{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:12px;
+    border:1px solid #ddd;
+}
+
+a{
+    padding:8px 15px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.add{
+    background:green;
+    color:white;
+}
+
+.edit{
+    background:blue;
+    color:white;
+}
+
+.delete{
+    background:red;
+    color:white;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Student Management System</h1>
+
+<a class="add" href="/add/">Add Student</a>
+
+<br><br>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Age</th>
+<th>Course</th>
+<th>Action</th>
+</tr>
+
+
+{% for student in students %}
+
+<tr>
+<td>{{student.id}}</td>
+<td>{{student.name}}</td>
+<td>{{student.age}}</td>
+<td>{{student.course}}</td>
+
+<td>
+<a class="edit" href="/edit/{{student.id}}/">Edit</a>
+
+<a class="delete" href="/delete/{{student.id}}/">Delete</a>
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+</html>
