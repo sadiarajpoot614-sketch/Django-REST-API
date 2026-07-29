@@ -54,80 +54,14 @@ Django REST API
 ### 1. Clone Repository
 
 ```bash
-git clone sadiarajpoot614-sketch/Django-REST-API
-
-### 2. Create Virtual Environment
+### 1. Clone Repository
 
 ```bash
-python -m venv venv
+git clone https://github.com/sadiarajpoot614-sketch/Django-REST-API.git
 ```
 
-### 3. Activate Environment
-
-Windows:
+### 1. Clone Repository
 
 ```bash
-venv\Scripts\activate
+git clone https://github.com/sadiarajpoot614-sketch/Django-REST-API.git
 ```
-
-### 4. Install Dependencies
-
-```bash
-pip install django djangorestframework
-```
-
-### 5. Run Migrations
-
-```bash
-python manage.py migrate
-```
-
-### 6. Start Server
-
-```bash
-python manage.py runserver
-```
-
----
-
-## 🌐 Available URLs
-
-### 🏠 Home Page
-
-```
-http://127.0.0.1:8000/
-```
-
-### 🔗 API
-
-```
-http://127.0.0.1:8000/api/
-```
-
-### 🔐 Admin Panel
-
-```
-http://127.0.0.1:8000/admin/
-```
-
----
-
-## 📸 Project Preview
-
-Home page includes a clean welcome interface with API navigation.
-
----
-
-## 👩‍💻 Author
-
-**Sadia Rajpoot**
-
----
-
-## ⭐ Future Improvements
-
-- Add Authentication System
-- Add JWT Token Authentication
-- Deploy API Online
-- Add More API Endpoints
-- Improve UI Design
