@@ -54,8 +54,7 @@ Django REST API
 ### 1. Clone Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-```
+git clone sadiarajpoot614-sketch/Django-REST-API
 
 ### 2. Create Virtual Environment
 
